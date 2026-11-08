@@ -34,7 +34,7 @@ Cloud Chomp is a tap-to-shoot learning game: answers float down and the player t
 ```
 index.html, privacy.html, support.html, terms.html   Site pages
 images/                                               Screenshots, cover and social preview images
-media/promo.mp4                                       Promo video shown on the landing page
+                                                      (No video files are stored here: the landing page plays the commercial from YouTube, click to play)
 .nojekyll                                             Tells GitHub Pages to serve files as-is (no Jekyll)
 README.md                                             This file
 ```

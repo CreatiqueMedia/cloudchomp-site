@@ -1,0 +1,10 @@
+# Video files live on YouTube, never in git
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.avi
+*.mkv
+*.mpg
+*.mpeg
+*.wmv

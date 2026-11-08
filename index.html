@@ -30,7 +30,7 @@ h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:8px 0 14px;color:#27
 .badge{display:inline-flex;flex-direction:column;align-items:center;min-width:150px;padding:10px 20px;border-radius:14px;background:#27506f;color:#fff;font-weight:800;text-decoration:none}
 .badge small{font-weight:600;opacity:.8;font-size:.78rem}
 .badge.soon{background:#5f7f98}
-video{width:100%;max-width:300px;justify-self:center;border-radius:28px;border:5px solid #fff;box-shadow:0 18px 40px rgba(39,80,111,.3);background:#bfeafb}
+.yt{position:relative;width:100%;max-width:440px;aspect-ratio:16/9;justify-self:center;border-radius:28px;overflow:hidden;border:5px solid #fff;box-shadow:0 18px 40px rgba(39,80,111,.3);background:#bfeafb center/contain no-repeat}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.yt button{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:rgba(39,80,111,.18)}.yt button:hover{background:rgba(39,80,111,.08)}.yt button span{position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.25)}.yt button span:after{content:"";position:absolute;left:27px;top:20px;border-left:22px solid #27506f;border-top:14px solid transparent;border-bottom:14px solid transparent}
 section{padding:44px 0}
 h2{font-size:1.7rem;color:#27506f;margin:0 0 20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
@@ -43,7 +43,7 @@ h2{font-size:1.7rem;color:#27506f;margin:0 0 20px}
 .price{background:#fff;border-radius:18px;padding:22px;box-shadow:0 4px 14px rgba(39,80,111,.08)}
 footer{border-top:1px solid #bddcec;padding:24px 0 48px;font-size:.95rem}
 footer a{margin-right:16px}
-@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}video{max-width:240px}}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.yt{max-width:100%}}
 </style>
 </head>
 <body>
@@ -54,7 +54,7 @@ footer a{margin-right:16px}
 <p class="lead">Tap to shoot the right answer as it floats down, and watch Chompy transform. Math, 162 spelling words, colors, shapes and bold, bright polygons for kindergarten through 8th grade, with no ads and no tracking.</p>
 <div class="badges"><span class="badge soon" aria-label="iPhone version coming soon">App Store<small>Coming soon</small></span><span class="badge soon" aria-label="Android version coming soon">Google Play<small>Coming soon</small></span></div>
 </div>
-<video controls playsinline preload="metadata" poster="images/cover.jpg" aria-label="CloudChomp gameplay preview"><source src="media/promo.mp4" type="video/mp4"></video>
+<div class="yt" data-yt="iqMLDorEzdI" style="background-image:url(images/cover.jpg)"><button type="button" aria-label="Play the Cloud Chomp commercial"><span></span></button></div><script>document.querySelectorAll(".yt[data-yt]").forEach(function(b){b.querySelector("button").addEventListener("click",function(){var f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.getAttribute("data-yt")+"?autoplay=1&rel=0";f.title="Cloud Chomp commercial";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;b.textContent="";b.appendChild(f)})})</script>
 </div></header>
 <main>
 <section><div class="wrap"><h2>One game, the whole school year</h2><div class="cards">
