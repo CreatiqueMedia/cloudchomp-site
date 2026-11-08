@@ -1,5 +1,7 @@
 # Cloud Chomp Site
 
+> **This site has moved to <https://creatiquemedia.com/cloudchomp/>.** These pages stay online only so that earlier versions of the Cloud Chomp app, which link here for the privacy policy and terms, keep working.
+
 Static website, privacy policy, support page and terms of use for **Cloud Chomp: Math & Spelling** (in-app title "Cloud Chomp: The Hungry Sky"), a kids' learning game for kindergarten through 8th grade, published by [CreatiqueMedia LLC](https://creatiquemedia.com).
 
 **Live site:** https://creatiquemedia.github.io/cloudchomp-site/
